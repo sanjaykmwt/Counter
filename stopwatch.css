@@ -1,0 +1,58 @@
+#stopwatch {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 15%;
+  background: linear-gradient(90deg, rgba(80,7,194,1) 0%, rgba(166,81,200,1) 35%, rgba(233,0,255,1) 100%);
+}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@media only screen and (max-width: 639px) {
+  #stopwatch {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin: 0 auto;
+    min-height: 1124px;
+    background: linear-gradient(90deg, rgba(80,7,194,1) 0%, rgba(166,81,200,1) 35%, rgba(233,0,255,1) 100%);
+  }
+  #sw-rst, #sw-go {
+    box-sizing: border-box;
+    width: 50%;
+    height: 10%;
+    cursor: pointer;
+    padding: 20px 0;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+}
+#sw-time {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  
+  color: #fff;
+}
+
+#sw-rst, #sw-go {
+  box-sizing: border-box;
+  width: 30%;
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+#sw-rst { background-color: #5007c2; }
+#sw-go { background-color: #5007c2; }
